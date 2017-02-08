@@ -1,0 +1,31 @@
+ <h3>Request Form</h3>
+
+<%= form_for Request.new do |f| %>
+
+  <%= f.label :"First Name" %>
+  <%= f.text_field :fname %><br>
+
+  <%= f.label :"Last Name" %>
+  <%= f.text_field :lname %><br>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %><br>
+
+  <%= f.label "Subject" %>
+  <%= f.select :reqtype, options_for_select(["Information", "Request"]), {}, {prompt: :select, class: 'browser-default'} %><br><br>
+
+  <%= f.label :Phone %>
+  <%= f.text_field :phone %><br>
+
+  <%= f.label :"From Date" %>
+  <%= f.text_field(:fromdate) %>
+
+  <%= f.label :"To Date" %>
+  <%= f.text_field :todate %><br>
+
+  <%= f.label :Content %>
+  <%= f.text_field :content %><br>
+
+  <%= f.submit %>
+
+<% end %>

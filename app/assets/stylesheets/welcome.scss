@@ -1,0 +1,189 @@
+// // Place all the styles related to the Welcome controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+// html,
+// body {
+// 	height: 100%;
+// }
+//
+// body {
+// 	background: radial-gradient( circle cover, hsl( 210, 90%, 90% ), hsl( 210, 90%, 70% ) );
+// 	overflow: hidden;
+// 	background: url(../image/beach1.jpg) no-repeat 100% 300 px;
+// }
+//
+// canvas {
+// 	display: block;
+// }
+//
+// body {
+//   background-color: white;
+// }
+//
+// #nav-mobile {
+// 	font-family: 'Lobster', cursive;
+//   font-size: 20px;
+// }
+//
+//
+//
+// .text {
+//   font-size: 20px;
+//   font-family: 'Lobster', cursive;
+// }
+//
+// footer.page-footer {
+//   background-color:grey;
+//   margin-top: 122px;
+// }
+//
+// .row6 {
+//   margin-bottom: 0;
+//   margin-left: 180px;
+//   position: absolute;
+// }
+// .row7 {
+//   position: relative;
+//   top: 450px;
+// }
+//
+// .row5 {
+//     margin-top: 500px;
+//     margin-bottom: 200px;
+//
+// }
+// //
+// // // .homeimg1 {
+// // //   width: 540px;
+// // //   height: 500px;
+// // // }
+// //
+// //
+// // .homeimg2 {
+// //
+// //   width: 650px;
+// //   height: 600px;
+// //
+// //
+// // }
+// //
+// //
+// //
+// //
+// // /* parent */
+// // div.flex-container {
+// //
+// //   height:800px;
+// //   width:1600px;
+// //
+// //   /* Part I */
+// //   display: flex;
+// //   flex-direction: column;
+// //   justify-content:center;
+// //   align-items: center;
+// //
+// //   /* Part II */
+// //   /*flex-wrap: wrap;*/
+// //
+// // }
+// //
+// //
+// //
+// //
+// // .link {
+// // 	outline: none;
+// // 	text-decoration: none;
+// // 	position: relative;
+// // 	font-size: 8em;
+// // 	line-height: 1;
+// // 	color: #9e9ba4;
+// // 	display: inline-block;
+// // }
+// // .link1 {
+// // 	outline: none;
+// // 	text-decoration: none;
+// // 	position: relative;
+// // 	font-size: 4em;
+// // 	line-height: 1;
+// // 	color: #9e9ba4;
+// // 	display: inline-block;
+// // }
+// //
+// // .link2 {
+// // 	outline: none;
+// // 	text-decoration: none;
+// // 	position: relative;
+// // 	font-size: 1em;
+// // 	line-height: 1;
+// // 	color: #9e9ba4;
+// // 	display: inline-block;
+// // }
+// //
+// // .link--kukuri {
+// // 	text-transform: uppercase;
+// // 	font-weight: 900;
+// // 	overflow: hidden;
+// // 	line-height: 0.75;
+// // 	color: #b2b0a9;
+// // }
+// //
+// // .link--kukuri:hover {
+// // 	color: #b2b0a9;
+// // }
+// //
+// // .link--kukuri::after {
+// // 	content: '';
+// // 	position: absolute;
+// // 	height: 16px;
+// // 	width: 100%;
+// // 	top: 50%;
+// // 	margin-top: -8px;
+// // 	right: 0;
+// // 	background: #F9F9F9;
+// // 	transform: translate3d(-100%,0,0);
+// // 	transition: transform 0.4s;
+// // 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+// // }
+// //
+// // .link--kukuri:hover::after {
+// // 	transform: translate3d(100%,0,0);
+// // }
+// //
+// // .link--kukuri::before {
+// // 	content: attr(data-letters);
+// // 	position: absolute;
+// // 	z-index: 2;
+// // 	overflow: hidden;
+// // 	color: #424242;
+// // 	white-space: nowrap;
+// // 	width: 0%;
+// // 	transition: width 0.4s 0.3s;
+// // }
+// //
+// // .link--kukuri:hover::before {
+// // 	width: 100%;
+// // }
+// //
+// // .form {
+// //   font-size: 40px;
+// //   width: auto;
+// // }
+// //
+// // .form1 {
+// //   font-size: 30px;
+// // }
+// //
+// // .brand-logo {
+// //   font-family: 'Neuton'
+// // }
+// // #link1 link--kukuri  {
+// //   font-size: 20px;
+// // }
+// h2 {
+// 	font-size: 20px;
+// 	font-family: 'Lobster', cursive;
+// 	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+// }
+// #row7  {
+//   justify-content: right;
+// }

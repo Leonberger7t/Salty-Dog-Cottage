@@ -1,0 +1,27 @@
+/*body {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+
+#infotitle {
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: 8em;
+  color: black;
+}*/
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+#datepicker {
+  padding-left: 500px;
+  background-color: khaki;
+}

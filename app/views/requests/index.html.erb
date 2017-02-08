@@ -1,0 +1,21 @@
+
+  <h1>List of All Requests</h1>
+
+<div class="w3-container">
+<% @all_requests.each do |request| %>
+
+  Name: <%= request.fname %>
+  <%= request.lname %>
+  Dates: <%= request.fromdate %>
+   -  <%= request.todate %>
+  Type: <%= request.reqtype %> <br>
+  Content: <%= request.content %> <br>
+
+
+   <div id=links1 class="links">
+    <%= link_to ("Edit"), edit_request_path(request.id) %>
+   </div>
+
+
+<% end %>
+<div>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Grid Loading and Hover Effect: Recreating Samsung's grid loading effect" />
+    <meta name="keywords" content="grid loading, swipe, effect, slide, masonry, web design, tutorial" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+    <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+
+    <title>SaltyDog</title>
+    <%= csrf_meta_tags %>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+
+    <nav>
+      <div id="nav-wrapper">
+        <div class="container">
+          <ul id="nav-mobile" class="left">
+            <li><a id="nav-mobile1" href="/photos">Photos</a></li>
+            <li><a id="nav-mobile2" href="/information">Information</a></li>
+          </ul>
+          <a href="/" class="brand-logo center">Salty Dog Cottage</a>
+          <ul id="nav-mobile6" class="right">
+            <li><a id="nav-mobile3" href="/requests/new">Request</a></li>
+            <li><a id="nav-mobile4" href="/calendar">Calendar</a></li>
+        </ul>
+
+        </div>
+      </div>
+
+    </nav>
+
+    <!--Flash Messages  -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+
+
+
+    <footer  id="pagefooter" class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l12 s12">
+            <h5 id="foottext">Salty Dog Cottage   For Reservations call 201-785-0110 or email 4quinn@optonline.net    © 2017 Copyright Text</h5>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+
+    <script>
+     //Jquery tabs
+      var tabsEl = $('#tabs');
+
+      if (tabsEl.length > 0) {
+        tabsEl.tabs({
+          active:1
+        });
+      }
+
+      //slick  carousel
+
+      $(document).ready(function(){
+          $('.your-class').slick({
+              autoplay: true,
+         });
+      });
+
+    </script>
+  </body>
+</html>

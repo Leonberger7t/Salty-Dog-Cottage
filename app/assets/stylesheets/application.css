@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-datepicker
+ */
+ body {
+   font-family: 'Lobster', cursive;
+   font-size: 22px;
+   background-color: ivory;
+ }
+
+ li {
+   display: inline;
+   padding-left: 200px;
+   color: black
+ }
+
+ nav .brand-logo {
+   text-shadow: 2px 2px black;
+   font-weight: bold;
+   font-size: 35px;
+   color: darkkhaki;
+ }
+
+img {
+    padding:10px;
+    border:15px solid #021a40;
+    border-radius: 30px;
+
+ }
+ .button-link {
+     padding: 10px 15px;
+     background: white;
+     color: blue;
+     border-color: black;
+     border-width: 2px;
+     radius: 20px;
+     width: 250px;
+     font-family: 'Lobster', cursive;
+  }
+#nav-mobile1 {
+  font-size: 30px;
+  text-shadow: 2px 2px darkslategrey;
+}
+.brand-logo {
+  text-shadow: 2px 2px black;
+}
+#nav-mobile2 {
+  font-size: 30px;
+  padding-left: 85px;
+  text-shadow: 2px 2px darkslategrey;
+}
+#nav-mobile3 {
+  font-size: 30px;
+  text-shadow: 2px 2px darkslategrey;
+}
+#nav-mobile4 {
+  font-size: 30px;
+  padding-left: 75px;
+  text-shadow: 2px 2px darkslategrey;
+}
+nav {
+  background-color: khaki;
+}
+#nav-moibile {
+  font-size: 20px;
+}
+#pagefooter {
+  background-color: ivory;
+  font-family: 'Lobster', cursive;
+}
+#fragment-1 {
+  background-color: #e6ffff;
+}
+#fragment-2 {
+  background-color: #e6ffe6;
+}
+#fragment-3 {
+  background-color: #ffffcc;
+}
+#fragment-4 {
+  background-color: #f2e6ff;
+}
+#fragment-5 {
+  background-color: #fff2e6;
+  opacity: 20%;
+}
+h2 {
+  color: black;
+}
+.slick-slider {
+  color: blue;
+}
+h3 {
+  text-align: center;
+}
+a {
+  color: black;
+}
+#welcome {
+  margin: 0px;
+}
+#links1 {
+  border: 2px black solid;
+  width: 55px;
+  margin: auto;
+
+}
+.w3-container {
+text-align: center;
+}

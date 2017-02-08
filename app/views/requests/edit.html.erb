@@ -1,0 +1,22 @@
+ <h1>Edit Request Form</h1>
+
+<%= form_for @request do |f| %>
+
+ Name: <%= @request.fname %><%= @request.lname %><br>
+ Email: <%= @request.lname %><br>
+ Content: <%= @request.content %><br>
+
+
+  <%= f.label "Subject" %>
+  <%= f.select :reqtype, options_for_select(["Information", "Request", "Approve"], @request.reqtype), {}, {prompt: :select, class: 'browser-default'} %><br><br>
+
+  <%= f.label :"From Date" %>
+  <%= f.text_field(:fromdate) %>
+
+  <%= f.label :"To Date" %>
+  <%= f.text_field :todate %><br>
+
+
+  <%= f.submit %>
+
+<% end %>

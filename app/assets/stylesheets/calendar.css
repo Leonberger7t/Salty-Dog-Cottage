@@ -1,0 +1,31 @@
+/*body {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+
+#infotitle {
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: 8em;
+  color: black;
+}*/
+h2 {
+  text-align: center;
+}
+#datepicker {
+  padding-left: 500px;
+  background-color: khaki;
+}
+div.ui-datepicker{
+ font-size:40px;
+}
+
+#currentdate {
+  padding-left: 43%;
+  font-size: 30px;
+}
