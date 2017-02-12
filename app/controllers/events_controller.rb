@@ -2,7 +2,6 @@ class EventsController < ApplicationController
 
 
   def index
-   puts "This is where we'll list all events."
    @message = "This is where we'll list all events."
    @events = event.all
   end

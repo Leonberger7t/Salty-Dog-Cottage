@@ -3,8 +3,11 @@ class RequestsController < ApplicationController
 
     protect_from_forgery with: :exception
 
+
   def create
       puts params.inspect
+
+      # Creates a mew resservatopms request record
 
       @new_request = Request.create(
         fname: params[:request][:fname],
@@ -17,6 +20,7 @@ class RequestsController < ApplicationController
         content: params[:request][:content]
       )
 
+      # Creates a mew  email and send it
 
       @from_email = params['request'][:email]
       @to_email = "4quinn@optonline.net"
@@ -53,27 +57,26 @@ class RequestsController < ApplicationController
     end
 
     def index
+      # Displays all request from most recent first
       @requests = Request.all
       @all_requests = @requests.reverse
       @request = Request.new
     end
 
     def edit
-
+     # Displays edit request type and dates
       @message = "This is the form to edit an existing request."
       @request = Request.find(params[:id])
-
     end
 
 
     def update
-
+   # Updates request record type and date
       @request = Request.find(params[:id])
       @request.update({
         reqtype: params[:request][:reqtype],
         fromdate: params[:request][:fromdate],
         todate: params[:request][:todate]
       })
-
     end
 end
