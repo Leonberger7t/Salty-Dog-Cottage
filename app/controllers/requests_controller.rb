@@ -50,9 +50,11 @@ class RequestsController < ApplicationController
       puts "response.body:", response.body
 
       if response.status_code.to_i == 202
+         flash[:notice] = "Email successfully created"
         redirect_to '/'
       else
-        redirect_to '/requests/new'
+         flash[:notice] = "Email not sent - pleases try again"
+         redirect_to '/requests/new'
       end
     end
 
