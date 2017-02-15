@@ -51,10 +51,8 @@ class RequestsController < ApplicationController
 
       if response.status_code.to_i == 202
         redirect_to '/'
-        flash[:notice] = "Your email was sent successfully"
       else
         redirect_to '/requests/new'
-         flash[:notice] = "Your email failed - please try again"
       end
     end
 
