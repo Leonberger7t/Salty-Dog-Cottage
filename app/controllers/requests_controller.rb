@@ -7,23 +7,58 @@ class RequestsController < ApplicationController
   def create
       puts params.inspect
 
+      #checks request record for information before writing a record
+      if params[:request][:fname] ==  "  " ||
+         params[:request][:lname] ==  "  " ||
+         params[:request][:email] ==  "  "||
+         params[:request][:content] == "  "
+
       # Creates a mew resservatopms request record
+        @new_request = Request.create(
+          fname: params[:request][:fname],
+          lname: params[:request][:lname],
+          email: params[:request][:email],
+          reqtype: params[:request][:reqtype],
+          phone: params[:request][:phone],
+          fromdate: params[:request][:fromdate],
+          todate: params[:request][:todate],
+          content: params[:request][:content]
+        )
+      end
 
-      @new_request = Request.create(
-        fname: params[:request][:fname],
-        lname: params[:request][:lname],
-        email: params[:request][:email],
-        reqtype: params[:request][:reqtype],
-        phone: params[:request][:phone],
-        fromdate: params[:request][:fromdate],
-        todate: params[:request][:todate],
-        content: params[:request][:content]
-      )
-
-      # Creates a mew  email and send it
+      # Creates a mew  email and send it admin
 
       @from_email = params['request'][:email]
       @to_email = "4quinn@optonline.net"
+      @email_subject = params['request'][:reqtype]
+      @email_content = params['request'][:content]
+
+
+      # set the 'from', 'subject' and 'to' addresses
+      from = SendGrid::Email.new(email: @from_email)
+      to = SendGrid::Email.new(email: @to_email)
+      subject = @email_subject
+
+      # set the content to send in the email
+      content = SendGrid::Content.new(type: 'text/plain', value: @email_content)
+
+      # set the mail attribute values
+      mail = SendGrid::Mail.new(from, subject, to, content)
+      puts "MAIL TO JSON", mail.to_json
+      # pass in the sendgrid api key
+      sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+
+      # send the email
+      response = sg.client.mail._('send').post(request_body: mail.to_json)
+
+      # display the response status code and body
+      puts "STATUS CODE:", response.status_code
+      puts "response.body:", response.body
+
+      # Creates a cc email and send it requester
+
+      @from_email = "4quinn@optonline.net"
+      @to_email = params['request'][:email]
       @email_subject = params['request'][:reqtype]
       @email_content = params['request'][:content]
 
