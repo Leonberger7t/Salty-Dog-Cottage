@@ -7,6 +7,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'jquery-ui-rails'
 gem 'sendgrid-ruby'
 gem "simple_calendar", "~> 2.0"
+gem "paperclip"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
