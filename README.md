@@ -4,8 +4,10 @@ This is a rental application for a summer cottage.
 
 # The home page uses bootstrap and contains basic information.
 
+I used Devise.
+
 Links to  Photos
-          Informaiton
+          Informaition
           Request
           Calendar
 
@@ -20,7 +22,7 @@ There are sign_up and sign_in administration functions but there are not needed 
 # Calendar - I used Datepicker - after a lot of trial and error because of conflict with bootstrap.
 Once a an email is received as the owner I can log in with a hidden admin sign in /Requests and update by making changes to the date and changing the type to Accept.  Once the reservations is accepted it will update the calendar.  This part is not working as of yet.
 
-Future enhancements will be to automatically update the calendar with reservations.  Email notifications for reservations will be sent out automatically 4 days before reservation to provide information on how to access the property and a reminder of what to bring.  I also hope to add payment ability and the ability to automatically refund the deposit 7 days after the rental has ended.  I also want to add mapquest map and the ability to create directions with the API.
+Future enhancements will be to automatically update the calendar with reservations.  Email notifications for reservations will be sent out automatically 4 days before reservation to provide information on how to access the property and a reminder of what to bring.  I also hope to add payment ability and the ability to automatically refund the deposit 7 days after the rental has ended.  I also want to add Mapquest map and the ability to create directions with the API.
 
 
 
