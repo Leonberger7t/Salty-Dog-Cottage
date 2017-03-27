@@ -1,17 +1,14 @@
 # cape-cod-house
 This is a rental application for a summer cottage.  
 
-
 # The home page uses bootstrap and contains basic information.
-
-I used Devise.
 
 Links to  Photos
           Informaition
           Request
           Calendar
 
-There are sign_up and sign_in administration functions but there are not needed to use the application.  These functions are hidden.  There is also a requests function that is hidden to update a request to accepted.
+There are sign_up and sign_in administration functions that use Devise but there are not needed to use the application.  These functions are hidden.  There is also a requests function that is hidden to update a request to accepted.
 
 #  Photo features a Slick-slider carousel to display photos and titles.
 
